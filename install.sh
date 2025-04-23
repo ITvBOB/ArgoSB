@@ -108,7 +108,7 @@ apk add wget curl tar jq tzdata openssl expect git socat iproute2 iptables grep 
 apk add virt-what
 else
 apt update -y
-apt install curl wget tar gzip cron xclip -y
+apt install curl wget tar gzip cron -y
 fi
 
 warpcheck(){
@@ -305,5 +305,4 @@ sed -n '1p' /etc/s-box-ag/jh.txt
 echo "---------------------------------------------------------"
 echo "---------------------------------------------------------"
 echo
-cat "/etc/s-box-ag/jh.txt" | xclip -selection clipboard
 rm ./install.sh
